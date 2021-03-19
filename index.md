@@ -47,7 +47,7 @@
 
         <div class="card">
           <h1>Send me an e-mail</h1>
-          <form action="https://formspree.io/f/xbjpvozq" method="POST">
+          <form action="https://formspree.io/f/xbjpvozq" method="POST" autocomplete="off">
             <div class="form" id="contact-me">
                 <input class="name" type="text" name="Name" placeholder="Enter Name" required>              
                 <input class="email" type="email" name="Email"  placeholder="Enter E-mail"required>
