@@ -1,8 +1,10 @@
-* {
+*{
     box-sizing: border-box;
   }
   
   body {
+    height: 100%;
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     background: #000;
@@ -11,7 +13,7 @@
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+    padding: 2px;
     text-align: center;
     background-image: url(./Images/header-galaxy.jpg);
     background-repeat: no-repeat;
@@ -19,13 +21,13 @@
   }
   
   .header h1{
-    font-size: 50px;
+    font-size: 36px;
     font-family: 'Times New Roman', Times, serif;
     color: aqua;
   }
 
   .header p{
-    font-size: 25px;
+    font-size: 20px;
     color: aqua;
   }
 
@@ -44,7 +46,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 18px;
   }
   
   /* Change color on hover */
@@ -67,29 +69,35 @@
     background-color: #000;
     padding-left: 20px;
   }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: white;
+
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+  .profile-picture img {
+    object-fit: cover;
     width: 100%;
-    padding: 20px;
-  }
+    height: 100%;
+}
     
   /* Add a card effect for articles */
-  .card {
+  .card  {
     background-color:#333;
     padding: 20px;
     margin-top: 20px;
   }
 
   .card h1{ 
-    font-size: 40px;
+    font-size: 28px;
     color : aqua;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .rightcolumn .card p{
-    font-size: 20px;
+    font-size: 13px;
     color:aqua;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -113,15 +121,15 @@
     color: rgba(84, 84, 240, 0.76);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 16px;
   }
+  
 
   .skills{
   margin-left: 20px;
   float: left;
   width: 53%;
-  background-color: black;
-  font-size: 28px;
+  font-size: 19px;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   } 
@@ -136,7 +144,7 @@
   }
 
   .tagcloud {
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Times New Roman', Times, serif;
   color:aqua;
   margin-left: 55%;
@@ -210,7 +218,7 @@
   border: 2px solid aqua;
   margin-left: 42%;
   width: 20%;
-  font-size: 26px;
+  font-size: 18px;
   color:aqua;
   background: linear-gradient(to right, aqua 50%, black 50%) right;
   background-size: 200%;
@@ -225,23 +233,23 @@
 
 ::placeholder{
   color: black;
-  font-size: 26px;
+  font-size: 18px;
   text-align: center;
 }
 
 input[type="text"]
 {
-    font-size:26px;
+    font-size:18px;
     font-family: 'Times New Roman', Times, serif;
 }
 input[type="email"]
 {
-    font-size:26px;
+    font-size:18px;
     font-family: 'Times New Roman', Times, serif;
 }
 textarea[type="text"]
 {
-  font-size: 26px;
+  font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -252,7 +260,7 @@ textarea[type="text"]
 
 .dropdown .dropbtn {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: aqua;
@@ -265,7 +273,7 @@ textarea[type="text"]
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -285,20 +293,4 @@ textarea[type="text"]
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn  {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .top-navigation-bar a {
-    float: none;
-    width: 100%;
-  }
 }
