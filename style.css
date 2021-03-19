@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    background: #000;
+    
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image: url(./Images/header-galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+  }
+
+  .header p{
+    font-size: 25px;
+    color: aqua;
+  }
+
+  /* Style the top navigation bar */
+  .top-navigation-bar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .top-navigation-bar a {
+    float: left;
+    display: block;
+    color: aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+  
+  /* Change color on hover */
+  .top-navigation-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #000;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+  }
+    
+  /* Add a card effect for articles */
+  .card {
+    background-color:#333;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .card h1{ 
+    font-size: 40px;
+    color : aqua;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .rightcolumn .card p{
+    font-size: 20px;
+    color:aqua;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: flex;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 1px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  .footer h2{
+    color: rgba(84, 84, 240, 0.76);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+
+  .skills{
+  margin-left: 20px;
+  float: left;
+  width: 53%;
+  background-color: black;
+  font-size: 28px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  } 
+
+  .skills:hover{
+  opacity: 1
+  }
+
+  .content{
+  background-color: black;
+  
+  }
+
+  .tagcloud {
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
+  color:aqua;
+  margin-left: 55%;
+  }
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tagcloud--item:hover {
+  background-color: rgba(212, 34, 34, 0.5);
+  border: 1px solid #333;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+  color: #fff;
+}
+
+.light .tagcloud--item:hover {
+  background-color: rgba(255,255,255,.1);
+  border: 1px solid #fff;
+}
+
+.card .form{
+  background-color:black;
+  align-content: center;
+  
+}
+
+.form .name{
+  margin-top: 30px;
+  background-color: white;
+  width: 29%;
+  height: 5vh;
+  margin-left: 22.8%;
+}
+
+.form .email{
+  background-color: white;
+  width: 29%;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+
+.form .subject{
+  background-color: white;
+  width: 58.3%;
+  height: 5vh;
+  margin-left: 22.8%;
+  margin-bottom: 10px;
+}
+
+.form .message{
+  background-color: white;
+  width: 58.3%;
+  margin-left: 22.8%;
+  height: 100px;
+  margin-bottom: 10px;
+  
+}
+
+.form .button{
+  border: 2px solid aqua;
+  margin-left: 42%;
+  width: 20%;
+  font-size: 26px;
+  color:aqua;
+  background: linear-gradient(to right, aqua 50%, black 50%) right;
+  background-size: 200%;
+  transition: all .3s ease-out;
+  margin-bottom: 30px;
+}
+
+.form .button:hover {
+  background-position: left bottom;
+  color:black;
+}
+
+::placeholder{
+  color: black;
+  font-size: 26px;
+  text-align: center;
+}
+
+input[type="text"]
+{
+    font-size:26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type="email"]
+{
+    font-size:26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+textarea[type="text"]
+{
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: aqua;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: aqua;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn  {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .top-navigation-bar a {
+    float: none;
+    width: 100%;
+  }
+}
