@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +68,9 @@
       <div class="rightcolumn">
         <div class="card">
           <h1>About Me</h1>
-          <img src="./Images/profile-picture.jpg">
+           <div class="profile-picture">
+            <img src="./Images/profile-picture.jpg">
+           </div>
           <p>23 years old, 1st year of Master in Telecommunications, Technical Univeristy of Cluj-Napoca</p>
         </div>
         <div class="card">
@@ -75,11 +78,11 @@
             <a href="./PDF/GraduationCertificate.pdf" target="_blank" style="float:right"><img src="./Images/pdf.png" alt="pdf"></a>
           </h1>
           <div class="fakeimg">
-            <img src="./Images/highschool.JPG"></div>
+            <img src="./Images/highschool.JPG" width="260px"></div>
           <div class="fakeimg">
-            <img src="./Images/bachelor.JPG"></div>
+            <img src="./Images/bachelor.JPG" width="260px"></div>
             <div class="fakeimg">
-            <img src="./Images/master.JPG"></div>
+            <img src="./Images/master.JPG" width="260px"></div>
         </div>
       </div>
     </div>
